@@ -1,0 +1,52 @@
+# ==============================================================================================================================
+# ==============================================================================================================================
+# ================ VAMOS A CREAR UN ALGORITMO QUE PERMITA VENDER PRODUCTOS =====================================================
+# ================ NOMBRE_CLIENTE, PRODUCTO, CANTIDAD, PRECIO, DOMICILIO (PREGUNTAR: "MUNICIPIO, BAQRRIO, DIRECCIÓN") ==========
+# ================ MEDELLIN: 5000, BELLO: 8000, ITAGUI: 40.000 =================================================================")
+
+
+print("====================== TIENDA DONDE ELI ===================================")
+print("POR FAVOR INGRESE LA SIGUIENTE INFORMACIÓN: ")
+
+cliente = input("Ingrese su nombre: ")
+producto = input("Ingrese el producto que desea comprar: ")
+cantidad = int(input("Ingrese la cantidad que desea comprar: "))
+precio = float(input("Ingrese el precio del producto: "))
+
+# VARIABLE PARA PREGUNTAR SI LA COMPRA ES ES A DOMICILIO ..............................
+domicilio = input("Ingrese su domicilio: ")
+
+# CREAR UNA CONDICIÓN PARA VERIFICAR QUE RESPONDIO EL USUARIO ==========================
+# .upper() SIRVE PARA CONVERTIR EN MAYUSCULAS  .lower() SIRVE PARA CONVERTIR EN MINUSCULAS.
+
+if domicilio.upper() == "NO":
+    print("====== RESUMEN DE LA COMPRA ================")
+    print(f""" 
+          
+          Cliente: {cliente}
+          Producto: {producto}
+          Cantidad: {cantidad}
+          Precio: {precio}  
+          Total: {cantidad * precio}
+          
+          Gracias por su compra 👌👌👌
+          
+          
+          """)
+   
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

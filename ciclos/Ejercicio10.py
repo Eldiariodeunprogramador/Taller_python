@@ -4,7 +4,7 @@
 # SUS VALORES. # CALCULAR Y MOSTRAR EL PROMEDIO AL FINALIZAR EL REGISTRAR. 
 # INDICAR SI EL ESTUDIANTE APROBÒ (PROMEDIO >= 3.0) O NO APROBÒ...
 # SOLICITAR LA CANTIDAD DE NOTAS...
-
+nombre_estudiante = input("Ingrese el nombre del estudiante: ")
 cantidad = int(input("¿Cuàntas notas deseas registrar? "))
 
 # VALIDAR QUE SEA MAYOR A CERO (0)
@@ -23,10 +23,10 @@ for i in range(1, cantidad + 1):
 promedio = suma_notas / cantidad
 
 # MOSTRAR EL RESULTADO...
-print(f"\n El promedio es {promedio:2f}")
+print(f"\n El promedio es {promedio:1f}, y el nombre del estudiante es: {nombre_estudiante}")
 
 # DETERMINAR SI APROBÒ O REPROBO
-if promedio >= 3.0:
+if promedio >= 3.5:
     print("El estudiante aprobò")
 else:
     print("El estudiante NO aprobò")
