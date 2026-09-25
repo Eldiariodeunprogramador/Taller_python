@@ -1,0 +1,1 @@
+lista_productos = [] # Esta es una lista vacia

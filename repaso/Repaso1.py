@@ -29,12 +29,40 @@ if domicilio.upper() == "NO":
           Precio: {precio}  
           Total: {cantidad * precio}
           
-          Gracias por su compra 👌👌👌
-          
+          Gracias por su compra 👌👌👌         
           
           """)
    
-   
+elif domicilio.upper() == "SI":
+    direccion = input("Ingrese el municipio de envio (Medellín, Itagui, Bello)")
+    valor_domicilio = 0
+    
+    if direccion.lower() == "Medellin":
+        valor_domicilio = 5000
+    elif direccion.lower() == "Itagui":
+        valor_domicilio = 10000
+    elif direccion.lower() == "Bello":
+        valor_domicilio = 8000
+    else:
+        print("Dirección invalida")
+
+# MOSTRAR RESUMEN DE VENTA
+
+print("==================================== RESUMEN DE LA COMPRA =============================================")        
+print(f"""
+      Cliente: {cliente}
+      Producto: {producto}
+      Cantidad: {cantidad}
+      Precio: {precio}
+      Subtotal {cantidad * precio} 
+      Domicilio {valor_domicilio}
+      Total a pagar: {valor_domicilio + (cantidad * precio)}
+      
+      👌👌👌 GRACIAS POR SU COMPRA 😊😊😊😊😊
+      
+      """)
+
+    
    
 
    
